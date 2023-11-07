@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-
+const list = ["Apple", "Banana", "PineApple", "Jam", "Cherry", "Mango"];
 const Search = () => {
-  const list = ["Apple", "Banana", "PineApple", "Jam", "Cherry", "Mango"];
-
   const [filter, setFilter] = useState(list);
 
   const [valuee, setValuee] = useState("");
 
   const handleSubmit = () => {
     if (valuee) {
-      setFilter([...filter, valuee]);
+      list.push(valuee);
+      setFilter([...filter]);
+      setValuee("");
     }
   };
   const handleSearch = (e) => {
@@ -17,8 +17,8 @@ const Search = () => {
       setFilter(list);
       return;
     }
-    const filterValue = list.filter(
-      (item) => item.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1
+    const filterValue = list.filter((item) =>
+      item.toLowerCase().includes(e.target.value.toLowerCase())
     );
     setFilter(filterValue);
   };
