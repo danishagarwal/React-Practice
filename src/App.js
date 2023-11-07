@@ -5,11 +5,16 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Ref from "./components/Ref";
 import Search from "./components/Search";
 import Counter from "./components/Counter";
+import Login from "./components/Login";
 
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
     element: <Memo />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "/counter",
