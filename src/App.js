@@ -6,6 +6,7 @@ import Ref from "./components/Ref";
 import Search from "./components/Search";
 import Counter from "./components/Counter";
 import Login from "./components/Login";
+import List from "./components/List";
 
 const appRouter = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/search",
     element: <Search />,
+  },
+  {
+    path: "/list",
+    element: <List></List>,
   },
   {
     path: "/",
