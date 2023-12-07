@@ -7,6 +7,7 @@ import Search from "./components/Search";
 import Counter from "./components/Counter";
 import Login from "./components/Login";
 import List from "./components/List";
+import TipCalc from "./components/TipCalc";
 
 const appRouter = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <Test></Test>,
+  },
+  {
+    path: "/tip",
+    element: <TipCalc />,
   },
 ]);
 
