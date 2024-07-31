@@ -11,6 +11,7 @@ import TipCalc from "./components/TipCalc";
 import StateHook from "./components/hooks/StateHook";
 import ReducerHook from "./components/hooks/ReducerHook";
 import EffectHook from "./components/hooks/EffectHook";
+import ContextHook from "./components/hooks/ContextHook";
 
 const appRouter = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/usereducer",
     element: <ReducerHook />,
+  },
+  {
+    path: "/usecontext",
+    element: <ContextHook />,
   },
   {
     path: "/login",
