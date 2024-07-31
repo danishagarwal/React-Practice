@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import List from "./components/List";
 import TipCalc from "./components/TipCalc";
 import StateHook from "./components/hooks/StateHook";
+import ReducerHook from "./components/hooks/ReducerHook";
 
 const appRouter = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/usestate",
     element: <StateHook />,
+  },
+  {
+    path: "/usereducer",
+    element: <ReducerHook />,
   },
   {
     path: "/login",
