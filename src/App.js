@@ -8,11 +8,16 @@ import Counter from "./components/Counter";
 import Login from "./components/Login";
 import List from "./components/List";
 import TipCalc from "./components/TipCalc";
+import StateHook from "./components/hooks/StateHook";
 
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
     element: <Memo />,
+  },
+  {
+    path: "/usestate",
+    element: <StateHook />,
   },
   {
     path: "/login",
