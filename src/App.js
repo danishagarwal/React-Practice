@@ -10,11 +10,16 @@ import List from "./components/List";
 import TipCalc from "./components/TipCalc";
 import StateHook from "./components/hooks/StateHook";
 import ReducerHook from "./components/hooks/ReducerHook";
+import EffectHook from "./components/hooks/EffectHook";
 
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
     element: <Memo />,
+  },
+  {
+    path: "/useeffect",
+    element: <EffectHook />,
   },
   {
     path: "/usestate",
