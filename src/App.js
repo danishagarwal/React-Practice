@@ -12,7 +12,7 @@ import StateHook from "./components/hooks/StateHook";
 import ReducerHook from "./components/hooks/ReducerHook";
 import EffectHook from "./components/hooks/EffectHook";
 import ContextHook from "./components/hooks/ContextHook";
-
+import TodoList from "./components/TodoList";
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
@@ -37,6 +37,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/todolist",
+    element: <TodoList />,
   },
   {
     path: "/counter",
