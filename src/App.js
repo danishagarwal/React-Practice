@@ -13,6 +13,8 @@ import ReducerHook from "./components/hooks/ReducerHook";
 import EffectHook from "./components/hooks/EffectHook";
 import ContextHook from "./components/hooks/ContextHook";
 import TodoList from "./components/TodoList";
+import Main from "./components/tictactoe/Main";
+import FetchDebounce from "./components/FetchDebounce";
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
@@ -65,6 +67,14 @@ const appRouter = createBrowserRouter([
   {
     path: "/tip",
     element: <TipCalc />,
+  },
+  {
+    path: "/tictactoe",
+    element: <Main />,
+  },
+  {
+    path: "/fetch",
+    element: <FetchDebounce />,
   },
 ]);
 
