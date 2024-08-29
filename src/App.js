@@ -1,8 +1,8 @@
 import "./App.css";
-import Memo from "./components/Memo";
+
 import Test from "./components/Test";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Ref from "./components/Ref";
+import Ref from "./components/hooks/Ref";
 import Search from "./components/Search";
 import Counter from "./components/Counter";
 import Login from "./components/Login";
@@ -14,13 +14,24 @@ import EffectHook from "./components/hooks/EffectHook";
 import ContextHook from "./components/hooks/ContextHook";
 import TodoList from "./components/TodoList";
 import Main from "./components/tictactoe/Main";
-import FetchDebounce from "./components/FetchDebounce";
 import Fetch from "./components/Fetch";
 import CounterTimer from "./components/CounterTimer";
+import Memo from "./components/hooks/Memo";
+import TraceACircle from "./components/TraceACircle";
+import MainPage from "./components/websitePrac/MainPage";
+
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
     element: <Memo />,
+  },
+  {
+    path: "/website",
+    element: <MainPage />,
+  },
+  {
+    path: "/tracer",
+    element: <TraceACircle />,
   },
   {
     path: "/useeffect",
