@@ -15,6 +15,8 @@ import ContextHook from "./components/hooks/ContextHook";
 import TodoList from "./components/TodoList";
 import Main from "./components/tictactoe/Main";
 import FetchDebounce from "./components/FetchDebounce";
+import Fetch from "./components/Fetch";
+import CounterTimer from "./components/CounterTimer";
 const appRouter = createBrowserRouter([
   {
     path: "/memo",
@@ -74,7 +76,11 @@ const appRouter = createBrowserRouter([
   },
   {
     path: "/fetch",
-    element: <FetchDebounce />,
+    element: <Fetch />,
+  },
+  {
+    path: "/counterTimer",
+    element: <CounterTimer />,
   },
 ]);
 
