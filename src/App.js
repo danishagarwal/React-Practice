@@ -1,7 +1,7 @@
 import "./App.css";
 
 import Test from "./components/Test";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Ref from "./components/hooks/Ref";
 import Search from "./components/Search";
 import Counter from "./components/Counter";
@@ -19,6 +19,11 @@ import CounterTimer from "./components/CounterTimer";
 import Memo from "./components/hooks/Memo";
 import TraceACircle from "./components/TraceACircle";
 import MainPage from "./components/websitePrac/MainPage";
+import Faq from "./components/websitePrac/Faq";
+import History from "./components/websitePrac/History";
+import Api from "./components/websitePrac/Api";
+import GetRealNumber from "./components/websitePrac/GetRealNumber";
+import MyNumbers from "./components/websitePrac/MyNumbers";
 
 const appRouter = createBrowserRouter([
   {
@@ -27,7 +32,34 @@ const appRouter = createBrowserRouter([
   },
   {
     path: "/website",
-    element: <MainPage />,
+    element: (
+      <div className="container mx-auto px-4">
+        {" "}
+        <MainPage />
+      </div>
+    ),
+    children: [
+      {
+        path: "faq",
+        element: <Faq />,
+      },
+      {
+        path: "numbers",
+        element: <MyNumbers />,
+      },
+      {
+        path: "real",
+        element: <GetRealNumber />,
+      },
+      {
+        path: "history",
+        element: <History />,
+      },
+      {
+        path: "api",
+        element: <Api />,
+      },
+    ],
   },
   {
     path: "/tracer",
