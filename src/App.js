@@ -24,6 +24,7 @@ import History from "./components/websitePrac/History";
 import Api from "./components/websitePrac/Api";
 import GetRealNumber from "./components/websitePrac/GetRealNumber";
 import MyNumbers from "./components/websitePrac/MyNumbers";
+import AutoSaveInput from "./components/NamasteReactInterviewPrep/AutoSaveInput";
 
 const appRouter = createBrowserRouter([
   {
@@ -124,6 +125,11 @@ const appRouter = createBrowserRouter([
   {
     path: "/counterTimer",
     element: <CounterTimer />,
+  },
+  // Namaste React Interview Prac
+  {
+    path: "/autosaveinput",
+    element: <AutoSaveInput />,
   },
 ]);
 
